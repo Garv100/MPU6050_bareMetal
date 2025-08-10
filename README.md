@@ -32,3 +32,22 @@ Make sure pull-up resistors (4.7kΩ to 10kΩ) are present on the I2C lines (SCL 
    ```bash
    git clone https://github.com/Garv100/MPU6050_bareMetal.git
    cd MPU6050_bareMetal
+   
+## Building and Flashing
+
+This project includes a `Makefile` for easy compilation and uploading.
+
+### Requirements
+
+- AVR-GCC toolchain installed (`avr-gcc`, `avr-objcopy`, `avrdude`)
+- USB connection to your ATmega328P device (e.g., Arduino Uno)
+- Adjust the serial port in the Makefile (`/dev/ttyUSB0` or `/dev/ttyACM0` depending on your system)
+
+### Compile
+
+Run this command in the project folder:
+
+```bash
+make
+
+   
